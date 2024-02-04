@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sort_by_name"
+            android:title="@string/name"
+            android:checkable="true" />
+        <item
+            android:id="@+id/sort_by_date_added"
+            android:title="@string/date_added"
+            android:checkable="true" />
+        <item
+            android:id="@+id/sort_by_last_updated"
+            android:title="@string/last_updated"
+            android:checkable="true" />
+    </group>
+</menu>

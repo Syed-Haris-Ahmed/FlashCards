@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_dark">
+
+    <TextView
+        android:id="@+id/username_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/username"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_profile_picture"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/username_text_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_settings"
+        android:layout_width="170dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/ic_user_settings_background"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/deck_trash"
+        app:layout_constraintEnd_toStartOf="@id/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view">
+
+        <Button
+            android:id="@+id/user_details_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/ic_user_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/deck_trash"
+        android:layout_width="170dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="47dp"
+        android:gravity="center"
+        android:background="@drawable/ic_deck_trash_background"
+        app:layout_constraintEnd_toStartOf="@id/card_trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_settings" >
+
+        <Button
+            android:id="@+id/deck_border"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_decks_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/deck_trash_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_delete_button"
+            app:layout_constraintBottom_toBottomOf="@+id/deck_border"
+            app:layout_constraintEnd_toEndOf="@+id/deck_border"
+            app:layout_constraintStart_toStartOf="@+id/deck_border"
+            app:layout_constraintTop_toTopOf="@+id/deck_border" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logout"
+        android:layout_width="170dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/ic_logout_background"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view"
+        app:layout_constraintBottom_toTopOf="@id/deck_trash"
+        app:layout_constraintStart_toEndOf="@id/user_settings">
+
+        <Button
+            android:id="@+id/log_out_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/ic_logout_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_trash"
+        android:layout_width="170dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="47dp"
+        android:gravity="center"
+        android:background="@drawable/ic_cards_trash_icon"
+        app:layout_constraintStart_toEndOf="@id/deck_trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_settings" >
+
+        <Button
+            android:id="@+id/card_border"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_cards_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/card_trash_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_delete_button"
+            app:layout_constraintBottom_toBottomOf="@+id/card_border"
+            app:layout_constraintEnd_toEndOf="@+id/card_border"
+            app:layout_constraintStart_toStartOf="@+id/card_border"
+            app:layout_constraintTop_toTopOf="@+id/card_border" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

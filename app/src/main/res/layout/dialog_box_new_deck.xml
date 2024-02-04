@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_rounded_dialog"
+    android:padding="5sp"
+    android:layout_gravity="center"
+    android:paddingTop="25sp">
+
+    <TextView
+        android:id="@+id/create_new_deck_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="@string/create_new_deck"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/deck_title_edit_text"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/create_new_deck_text_view"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:hint="@string/title" />
+
+    <LinearLayout
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        android:paddingBottom="8sp"
+        android:paddingTop="8sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/deck_title_edit_text"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginEnd="5sp"
+            android:contentDescription="@string/check_box"
+            android:elevation="20sp"
+            android:layout_weight="1"
+            android:background="#1D1D20"
+            android:src="@drawable/ic_cross" />
+
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="5sp"
+            android:contentDescription="@string/cancel_box"
+            android:layout_weight="1"
+            android:elevation="20sp"
+            android:background="#1D1D20"
+            android:src="@drawable/ic_add_button" />
+    </LinearLayout>
+
+</RelativeLayout>

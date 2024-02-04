@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "853267780923",
+    "project_id": "flash-cards-cada3",
+    "storage_bucket": "flash-cards-cada3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853267780923:android:195ba2d64a684bd0b6131e",
+        "android_client_info": {
+          "package_name": "com.example.flashcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853267780923-e8shehenkprlcmmd4sp4uuoc171adui8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrTEkf1qkkZ6EHgDNuaYlXwKE8DGUgxko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853267780923-e8shehenkprlcmmd4sp4uuoc171adui8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
